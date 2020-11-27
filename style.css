@@ -1,0 +1,286 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .homebackground {
+    background: rgb(17, 3, 53);
+  }
+  .background {
+    background-image: url("image/hogwarts-02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Bitter', serif;
+    opacity: 0.8;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 1% 5%;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background: rgb(166,0,219);
+    background: linear-gradient(180deg, rgba(166,0,219,0.55) 0%, 
+    rgba(163,62,209,0.65) 31%, rgba(145,49,187,0.55) 45%, rgba(75,0,99,1) 100%);
+    color: white;
+    font-size: 30px;    
+  }
+
+  .homecaption{
+    text-align: center;
+    font-size: 100px;
+    margin: 20PX;
+    font-family: 'Nerko One', cursive;
+    color: lightgrey;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-style: underline;
+    opacity: 0.9;
+  }
+
+  .caption{
+    font-size: 40px;
+    font-family: 'Nerko One', cursive;
+    color: black;
+    font-style: underline;
+  }
+
+  .homehighlight{
+    background: rgb(166,0,219);
+    background: linear-gradient(180deg, rgba(166,0,219,1) 0%, rgba(173,62,209,1) 31%, rgba(75,0,99,1) 100%);
+    border-radius: 20px;
+  }
+
+  .homeimage {
+    display: block;
+    text-align: center;
+    margin: 50px 0px;
+  }
+
+  .line {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .container {
+    padding: 10px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid violet;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    opacity: 0.8;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid whitesmoke;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    opacity: 0.8;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 6px;
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .line::after {
+      left: 95px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 150px;
+      padding-right: 200px;
+    }
+  
+    .container::before {
+      left: 140px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    .left::after, .right::after {
+      left: 80px;
+    }
+  
+    .right {
+      left: 0%;
+    }
+  }
+
+  .houserow{
+    display: flex;
+  }
+
+  .houserow div{
+    margin: 0.5% 1%;
+    width: 50%;
+  }
+
+  .housesection {
+    display: flex;
+    background-color: whitesmoke;
+    opacity: 0.8;
+  }
+
+  .housesection img{
+    align-self: center;
+  }
+
+  .housesection p {
+    background-color: #E6E6FA;
+    text-align: justify;
+    line-height: 100%;
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Nerko One', cursive;
+  }
+
+
+  @media screen and (max-width:1000px) {
+    .houserow{
+      flex-direction: column;
+      align-items:center  ;
+    }
+    .houserow div{
+      margin: 1.6%;
+      width: 80%;
+    }
+  }
+
+  .subjectrow{
+    display: flex;
+  }
+
+  .subjectrow div{
+    margin: 1.6%;
+    width: 20%;
+  }
+
+  .subjectsection {
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+
+  .subjectsection p {
+    font-family: 'Nerko One', cursive;
+    text-align: center;
+    margin: 10px 26px 10px 15px ;
+    font-size: 35px;
+  }
+
+
+  @media screen and (max-width:1000px) {
+    .subjectrow{
+      flex-direction: column;
+      align-items:center  ;
+    }
+    .subjectrow div{
+      margin: 1.6%;
+      width: 50%;
+    }
+  }
+
+  footer {
+    display: table;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: darkgray;
+    z-index: 2;
+ }
+
+ .footertext{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: black; font-size: 15px;  
+    font-family: Arial, Helvetica, sans-serif; 
+ }
