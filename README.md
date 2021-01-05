@@ -28,3 +28,6 @@ https://wallpaperboat.com/hogwarts-wallpapers
 https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry?file=Hogwarts.jpg
 
 https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry#:~:text=Hogwarts%20was%20founded%20around%20990,Rowena%20Ravenclaw%2C%20and%20Salazar%20Slytherin.&text=The%20other%20three%20founders%20all,building%20the%20Chamber%20of%20Secrets.
+
+repo link: https://github.com/wwaii/IDAssignment1/
+page link: https://wwaii.github.io/IDAssignment1/
